@@ -59,6 +59,7 @@ public class MirrorClient {
     contacts.delete(contactId).execute();
   }
 
+
   public static ContactsListResponse listContacts(Credential credential) throws IOException {
     Mirror.Contacts contacts = getMirror(credential).contacts();
     return contacts.list().execute();
